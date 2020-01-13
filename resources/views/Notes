@@ -1,0 +1,6 @@
+laravel new laravelVue
+
+composer require laravel/ui
+php artisan help ui
+php artisan ui vue
+npm install && npm install vue-router vuetify
