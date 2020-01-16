@@ -1,14 +1,16 @@
 <template>
-    <div>
-        <v-container>
-            <v-alert type="info">hi How are you?</v-alert>
-            <router-link to="/foo">foo</router-link>
-            <router-link to="/error">error</router-link>
-            <v-btn link to="/error"> error</v-btn>
-        </v-container>
-        <v-content>
-            <router-view></router-view>
-        </v-content>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Example Component</div>
+
+                    <div class="card-body">
+                        I'm an example component.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
