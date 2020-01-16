@@ -135,6 +135,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\LaragonServer\www\laravelVue\resources\js\components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\LaragonServer\www\laravelVue\resources\js\components" />
       <recent name="C:\LaragonServer\www\laravelVue\resources\js" />
@@ -187,7 +190,7 @@
       <updated>1578907476626</updated>
       <workItem from="1578907477838" duration="7984000" />
       <workItem from="1579151070381" duration="6674000" />
-      <workItem from="1579158794326" duration="5360000" />
+      <workItem from="1579158794326" duration="5791000" />
     </task>
     <servers />
   </component>

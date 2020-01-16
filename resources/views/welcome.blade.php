@@ -20,6 +20,7 @@
 <body>
 <div id="app">
     <div class="container-scroller">
+        <example-app></example-app>
         <example-try></example-try>
     </div>
 </div>
