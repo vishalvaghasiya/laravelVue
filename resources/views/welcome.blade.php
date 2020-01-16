@@ -10,8 +10,8 @@
     <link rel="icon" href="{{asset('favicon.ico')}}">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/materialdesignicons.min.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/materialdesignicons.min.css.map')}}"/>
+    {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.7.95/css/materialdesignicons.css">--}}
+    <link rel="stylesheet" type="text/css" href="{{asset('css/mdi/css/materialdesignicons.min.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/vendor.bundle.base.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}"/>
@@ -31,9 +31,9 @@
 <script type="application/javascript" src="{{asset('js/hoverable-collapse.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/misc.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/dashboard.js')}}"></script>
+{{--<script type="application/javascript" src="{{asset('js/chart.js')}}"></script>--}}
 <script type="application/javascript" src="{{asset('js/Chart.min.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/todolist.js')}}"></script>
-<script type="application/javascript" src="{{asset('js/chart.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>

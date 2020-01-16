@@ -57,10 +57,17 @@
                     <i class="mdi mdi-chart-bar menu-icon"></i>
                 </router-link>
             </li>
+
             <li class="nav-item">
 
                 <router-link to="/table" class="nav-link">
                     <span class="menu-title">Tables</span>
+                    <i class="mdi mdi-table-large menu-icon"></i>
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link to="/tablePost" class="nav-link">
+                    <span class="menu-title">Post Tables</span>
                     <i class="mdi mdi-table-large menu-icon"></i>
                 </router-link>
             </li>

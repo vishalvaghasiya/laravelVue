@@ -14,5 +14,8 @@
 /*Route::get('/', function () {
     return view('welcome');
 });*/
+Route::group(['api' => 'postApi'], function () {
+    Route::get('/postApi', 'ApiController@postApi');
+});
 
 Route::get('/{view?}', 'PagesController@landing')->where('view', '(.*)')->name('landing');

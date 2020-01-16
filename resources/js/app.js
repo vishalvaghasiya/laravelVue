@@ -10,8 +10,11 @@ import App from "./components/App";
 
 
 Vue.use(VueRouter);
+
 const routesConst = new VueRouter({
     routes: Routes,
+    mode: 'history',
+    // mode: 'hash',
 });
 
 const app = new Vue({
