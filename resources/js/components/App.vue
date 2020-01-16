@@ -1,25 +1,31 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
+    <div id="app">
+        <app-navbar></app-navbar>
+        <div class="container-fluid page-body-wrapper">
+            <app-sidebar></app-sidebar>
+            <dashboard></dashboard>
+            <!--<router-view></router-view>
+            <router-view></router-view>-->
         </div>
-    </div>
+        <app-footer></app-footer>
 
+    </div>
 </template>
 
 <script>
+    import navbarCustom from "./common/navbarCustom";
+    import sidebarCustom from "./common/sidebarCustom";
+    import footerCustom from "./common/footerCustom";
+    import Dashboard from "./pages/dashboard";
 
     export default {
         name: 'app',
-        components: {}
+        components: {
+            Dashboard,
+            "app-navbar": navbarCustom,
+            'app-sidebar': sidebarCustom,
+            "app-footer": footerCustom,
+        }
     }
 </script>
 
