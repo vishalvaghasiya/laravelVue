@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/{view?}', 'PagesController@landing')->where('view', '(.*)')->name('landing');
