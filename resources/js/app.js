@@ -4,15 +4,18 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+
 require('./bootstrap');
 window.Vue = require('vue');
 
 /*Vue.component('example-try', require('./components/ExampleComponent.vue').default);*/     // global declaration
-import ExampleComponent from "./components/ExampleComponent";   // local component declaration
+/*import ExampleComponent from "./components/ExampleComponent";*/   // local component declaration
+
+import dashboard from "./components/pages/dashboard";
 
 const app = new Vue({
     el: '#app',
     components: {
-        'example-try' : ExampleComponent
+        'example-try' : dashboard
     }
 });
