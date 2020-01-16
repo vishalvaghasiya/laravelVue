@@ -49519,9 +49519,12 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_ExampleComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/ExampleComponent */ "./resources/js/components/ExampleComponent.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -49530,7 +49533,9 @@ module.exports = function(module) {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-Vue.component('example-try', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]); // global declaration
+/*Vue.component('example-try', require('./components/ExampleComponent.vue').default);*/
+// global declaration
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -49539,7 +49544,10 @@ Vue.component('example-try', __webpack_require__(/*! ./components/ExampleCompone
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  components: {
+    'example-try': _components_ExampleComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
 });
 
 /***/ }),
