@@ -17,7 +17,7 @@
                             <h4 class="card-title">Bordered table</h4>
                             <p class="card-description"> Add class <code>.table-bordered</code>
                             </p>
-                            <!--<table class="table table-bordered">
+                            <table class="table table-hover table-bordered">
                                 <thead>
                                 <tr>
                                     <th> #</th>
@@ -28,38 +28,23 @@
                                     <th> created</th>
                                 </tr>
                                 </thead>
-                                <tbody v-if="loading">
-                                <tr>
-                                    <td> 1</td>
-                                    <td> Herman Beck</td>
-                                    <td>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
-                                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
+                                <tbody>
+                                <tr v-if="posts.length <= 0" class="text-center ml-5">
+                                    <td colspan="6" style="height:200px;">
+                                        <img src="images/loading.gif" alt="gif loading"
+                                             style="width:200px;height:200px">
                                     </td>
-                                    <td> $ 77.99</td>
-                                    <td> $ 77.99</td>
-                                    <td> May 15, 2015</td>
                                 </tr>
-                                <tbody v-else>
-                                <tr v-for="post in posts" :key="post.id">
-                                    <td> #</td>
-                                    <td> {{post.title}}</td>
-                                    <td>
-                                        &lt;!&ndash;<div class="progress">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
-                                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>&ndash;&gt;
-
-                                        {{post.body}}
-                                    </td>
-                                    <td> {{post.category}}</td>
+                                <tr v-for="(post , index) in posts">
+                                    <td>{{index+1}}</td>
+                                    <td>{{post.title}}</td>
+                                    <td>{{post.user['name']}}</td>
+                                    <td>{{post.body}}</td>
+                                    <td>{{post.category}}</td>
                                     <td>{{post.created}}</td>
-                                    <td> {{post.title}}</td>
                                 </tr>
                                 </tbody>
-                            </table>-->
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -70,10 +55,10 @@
 
 <script>
     export default {
-        name: "dynamic-post",
+        name: "dynamicPost",
         data() {
             return {
-                'posts': [],
+                posts: [],
             }
         },
         mounted() {
@@ -81,20 +66,22 @@
             this.getPost();
         },
         methods: {
-            getPost(){
+            getPost() {
                 axios.get('/postApi')
-                    .then(function (response) {
-                        console.log(response.data.data);
+                    .then(response => {
+                        //.then(function (response) {
+                        //console.log(response.data.data);
+                        this.posts = response.data.data.slice(0, 10);
                     })
-                    .catch(function (error) {
+                    .catch(error => {
                         console.log(error);
-                    })
-                    .finally(function () {
                     });
             }
         }
     }
 </script>
 <style scoped>
-
+    .table tr:hover {
+        background: rgba(32, 255, 223, 0.35);
+    }
 </style>

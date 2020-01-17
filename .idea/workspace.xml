@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22662bc3-547d-44aa-8213-054832b9125d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/PostApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/PostApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/pages/dynamicPost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/dynamicPost.vue" afterDir="false" />
     </list>
@@ -129,20 +130,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components/pages" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/EasyPHP-Devserver-17/eds-www/Vue/vue-playlist" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\LaragonServer\www\laravelVue\resources\js\components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\LaragonServer\www\laravelVue\public\images" />
       <recent name="C:\LaragonServer\www\laravelVue\resources\js\components\pages" />
       <recent name="C:\LaragonServer\www\laravelVue\public\css" />
       <recent name="C:\LaragonServer\www\laravelVue\public\css\material" />
       <recent name="C:\LaragonServer\www\laravelVue\resources\js" />
-      <recent name="C:\LaragonServer\www\laravelVue\resources\js\components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\LaragonServer\www\laravelVue\resources\js\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -192,7 +193,7 @@
       <workItem from="1579151070381" duration="6674000" />
       <workItem from="1579158794326" duration="10349000" />
       <workItem from="1579172214329" duration="10303000" />
-      <workItem from="1579242697874" duration="8388000" />
+      <workItem from="1579242697874" duration="14909000" />
     </task>
     <servers />
   </component>

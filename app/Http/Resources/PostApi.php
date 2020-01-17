@@ -20,7 +20,7 @@ class PostApi extends JsonResource
             'category' => $this->category,
             'title' => $this->title,
             'body' => $this->body,
-            'created' => date_format($this->created_at, 'd/m/Y H:i:s'),
+            'created' => date_format($this->created_at, 'M d, Y'),
             'user' => new UserResource($this->user),
         ];
     }
