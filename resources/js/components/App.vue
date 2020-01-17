@@ -3,7 +3,6 @@
         <app-navbar></app-navbar>
         <div class="container-fluid page-body-wrapper">
             <app-sidebar></app-sidebar>
-            <!--<dashboard></dashboard>-->
             <router-view></router-view>
         </div>
         <app-footer></app-footer>
@@ -15,7 +14,6 @@
     import navbarCustom from "./common/navbarCustom";
     import sidebarCustom from "./common/sidebarCustom";
     import footerCustom from "./common/footerCustom";
-    /*import Dashboard from "./pages/dashboard";*/
 
     export default {
         name: 'app',

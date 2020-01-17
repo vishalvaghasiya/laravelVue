@@ -1,6 +1,5 @@
 <template>
     <div class="main-panel" id="chartId">
-
         {{forceRerender()}}
         <div class="content-wrapper">
             <div class="page-header">
@@ -71,6 +70,7 @@
 </template>
 <script>
     import chart from "../../../../public/js/chart.js";
+
     export default {
         el: '#chartId',
         methods: {

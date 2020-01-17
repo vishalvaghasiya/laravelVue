@@ -21,7 +21,11 @@
 <div id="app">
     <div class="container-scroller">
         <example-app></example-app>
-        <example-try></example-try>
+        {{--<example-try></example-try>--}}
+        {{-- app.js:65412
+            Error : [Vue warn]: Unknown custom element: <example-try> - did you register the component correctly? For recursive components, make sure to provide the "name" option. (found in <Root>)
+        --}}
+
     </div>
 </div>
 
@@ -31,8 +35,12 @@
 <script type="application/javascript" src="{{asset('js/hoverable-collapse.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/misc.js')}}"></script>
 <script type="application/javascript" src="{{asset('js/dashboard.js')}}"></script>
-{{--<script type="application/javascript" src="{{asset('js/chart.js')}}"></script>--}}
-<script type="application/javascript" src="{{asset('js/Chart.min.js')}}"></script>
+<script type="application/javascript" src="{{asset('js/chart.js')}}"></script>
+
+{{-- Error: Uncaught SyntaxError: Unexpected token '<'   || solve beasuce because base url forgot like js/chart.min.js  but here write only chart.min.js--}}
+<script type="application/javascript" src="{{asset('js/chart.min.js')}}"></script>
+
+
 <script type="application/javascript" src="{{asset('js/todolist.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
 </body>

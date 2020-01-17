@@ -452,7 +452,7 @@
 
 <script>
     export default {
-        name: "table"
+        name: "dynamic-post"
     }
 </script>
 

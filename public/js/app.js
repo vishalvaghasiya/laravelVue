@@ -1947,11 +1947,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
-
-/*import Dashboard from "./pages/dashboard";*/
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'app',
@@ -1983,8 +1980,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "footer"
+  name: "footerCustom"
+  /* todo:
+      Error : [Vue warn]: Do not use built-in or reserved HTML elements as component id: footer
+      because name : "footer"
+      Solve : name : "footerCustom" and file name Change
+  */
+
 });
 
 /***/ }),
@@ -2160,7 +2165,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "navbar"
+  name: "navbarCustom"
 });
 
 /***/ }),
@@ -2294,9 +2299,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "sidebar"
+  name: "sidebarCustom"
 });
 
 /***/ }),
@@ -2825,7 +2829,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   el: '#chartId',
@@ -3215,6 +3218,473 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "dashboard"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/dynamicPost.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/dynamicPost.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "dynamic-post"
 });
 
 /***/ }),
@@ -45021,11 +45491,9 @@ var render = function() {
           [
             _c(
               "router-link",
-              { staticClass: "nav-link", attrs: { to: "/tablePost" } },
+              { staticClass: "nav-link", attrs: { to: "/post" } },
               [
-                _c("span", { staticClass: "menu-title" }, [
-                  _vm._v("Post Tables")
-                ]),
+                _c("span", { staticClass: "menu-title" }, [_vm._v("Post")]),
                 _vm._v(" "),
                 _c("i", { staticClass: "mdi mdi-table-large menu-icon" })
               ]
@@ -47196,7 +47664,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "main-panel", attrs: { id: "chartId" } }, [
-    _vm._v("\n\n    " + _vm._s(_vm.forceRerender()) + "\n    "),
+    _vm._v("\n    " + _vm._s(_vm.forceRerender()) + "\n    "),
     _vm._m(0)
   ])
 }
@@ -48070,6 +48538,938 @@ var staticRenderFns = [
                       ])
                     ]
                   )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/dynamicPost.vue?vue&type=template&id=12297ef9&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/dynamicPost.vue?vue&type=template&id=12297ef9&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "main-panel" }, [
+      _c("div", { staticClass: "content-wrapper" }, [
+        _c("div", { staticClass: "page-header" }, [
+          _c("h3", { staticClass: "page-title" }, [_vm._v(" Basic Tables ")]),
+          _vm._v(" "),
+          _c("nav", { attrs: { "aria-label": "breadcrumb" } }, [
+            _c("ol", { staticClass: "breadcrumb" }, [
+              _c("li", { staticClass: "breadcrumb-item" }, [
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Tables")])
+              ]),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "breadcrumb-item active",
+                  attrs: { "aria-current": "page" }
+                },
+                [_vm._v("Basic tables")]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6 grid-margin stretch-card" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-body" }, [
+                _c("h4", { staticClass: "card-title" }, [
+                  _vm._v("Basic Table")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "card-description" }, [
+                  _vm._v(" Add class "),
+                  _c("code", [_vm._v(".table")])
+                ]),
+                _vm._v(" "),
+                _c("table", { staticClass: "table" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v("Profile")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("VatNo.")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Created")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Status")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [_vm._v("Jacob")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("53275531")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("12 May 2017")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-danger" }, [
+                          _vm._v("Pending")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Messsy")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("53275532")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("15 May 2017")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-warning" }, [
+                          _vm._v("In progress")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("John")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("53275533")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("14 May 2017")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-info" }, [
+                          _vm._v("Fixed")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Peter")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("53275534")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("16 May 2017")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-success" }, [
+                          _vm._v("Completed")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Dave")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("53275535")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("20 May 2017")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-warning" }, [
+                          _vm._v("In progress")
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-6 grid-margin stretch-card" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-body" }, [
+                _c("h4", { staticClass: "card-title" }, [
+                  _vm._v("Hoverable Table")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "card-description" }, [
+                  _vm._v(" Add class "),
+                  _c("code", [_vm._v(".table-hover")])
+                ]),
+                _vm._v(" "),
+                _c("table", { staticClass: "table table-hover" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v("User")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Product")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Sale")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Status")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [_vm._v("Jacob")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Photoshop")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-danger" }, [
+                        _vm._v(" 28.76% "),
+                        _c("i", { staticClass: "mdi mdi-arrow-down" })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-danger" }, [
+                          _vm._v("Pending")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Messsy")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Flash")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-danger" }, [
+                        _vm._v(" 21.06% "),
+                        _c("i", { staticClass: "mdi mdi-arrow-down" })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-warning" }, [
+                          _vm._v("In progress")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("John")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Premier")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-danger" }, [
+                        _vm._v(" 35.00% "),
+                        _c("i", { staticClass: "mdi mdi-arrow-down" })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-info" }, [
+                          _vm._v("Fixed")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Peter")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("After effects")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-success" }, [
+                        _vm._v(" 82.00% "),
+                        _c("i", { staticClass: "mdi mdi-arrow-up" })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-success" }, [
+                          _vm._v("Completed")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Dave")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("53275535")]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "text-success" }, [
+                        _vm._v(" 98.05% "),
+                        _c("i", { staticClass: "mdi mdi-arrow-up" })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("label", { staticClass: "badge badge-warning" }, [
+                          _vm._v("In progress")
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-12 grid-margin stretch-card" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-body" }, [
+                _c("h4", { staticClass: "card-title" }, [
+                  _vm._v("Striped Table")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "card-description" }, [
+                  _vm._v(" Add class "),
+                  _c("code", [_vm._v(".table-striped")])
+                ]),
+                _vm._v(" "),
+                _c("table", { staticClass: "table table-striped" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v(" User ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" First name ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Progress ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Amount ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Deadline ")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", { staticClass: "py-1" }, [
+                        _c("img", {
+                          attrs: {
+                            src: "images/faces-clipart/pic-1.png",
+                            alt: "image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Herman Beck ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-success",
+                            staticStyle: { width: "25%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "25",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 77.99 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 15, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "py-1" }, [
+                        _c("img", {
+                          attrs: {
+                            src: "images/faces-clipart/pic-2.png",
+                            alt: "image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Messsy Adam ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-danger",
+                            staticStyle: { width: "75%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "75",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $245.30 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" July 1, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "py-1" }, [
+                        _c("img", {
+                          attrs: {
+                            src: "images/faces-clipart/pic-3.png",
+                            alt: "image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" John Richards ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-warning",
+                            staticStyle: { width: "90%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "90",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $138.00 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Apr 12, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "py-1" }, [
+                        _c("img", {
+                          attrs: {
+                            src: "images/faces-clipart/pic-4.png",
+                            alt: "image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Peter Meggik ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-primary",
+                            staticStyle: { width: "50%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "50",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 77.99 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 15, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "py-1" }, [
+                        _c("img", {
+                          attrs: {
+                            src: "images/faces-clipart/pic-1.png",
+                            alt: "image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Edward ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-danger",
+                            staticStyle: { width: "35%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "35",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 160.25 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 03, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "py-1" }, [
+                        _c("img", {
+                          attrs: {
+                            src: "images/faces-clipart/pic-2.png",
+                            alt: "image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" John Doe ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-info",
+                            staticStyle: { width: "65%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "65",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 123.21 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" April 05, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticClass: "py-1" }, [
+                        _c("img", {
+                          attrs: {
+                            src: "images/faces-clipart/pic-3.png",
+                            alt: "image"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Henry Tom ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-warning",
+                            staticStyle: { width: "20%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "20",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 150.00 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" June 16, 2015 ")])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-12 grid-margin stretch-card" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-body" }, [
+                _c("h4", { staticClass: "card-title" }, [
+                  _vm._v("Bordered table")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "card-description" }, [
+                  _vm._v(" Add class "),
+                  _c("code", [_vm._v(".table-bordered")])
+                ]),
+                _vm._v(" "),
+                _c("table", { staticClass: "table table-bordered" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v(" # ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" First name ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Progress ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Amount ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Deadline ")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [_vm._v(" 1 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Herman Beck ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-success",
+                            staticStyle: { width: "25%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "25",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 77.99 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 15, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 2 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Messsy Adam ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-danger",
+                            staticStyle: { width: "75%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "75",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $245.30 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" July 1, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 3 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" John Richards ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-warning",
+                            staticStyle: { width: "90%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "90",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $138.00 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Apr 12, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 4 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Peter Meggik ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-primary",
+                            staticStyle: { width: "50%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "50",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 77.99 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 15, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 5 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Edward ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-danger",
+                            staticStyle: { width: "35%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "35",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 160.25 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 03, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 6 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" John Doe ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-info",
+                            staticStyle: { width: "65%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "65",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 123.21 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" April 05, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 7 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Henry Tom ")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("div", { staticClass: "progress" }, [
+                          _c("div", {
+                            staticClass: "progress-bar bg-warning",
+                            staticStyle: { width: "20%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "20",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 150.00 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" June 16, 2015 ")])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-12 grid-margin stretch-card" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-body" }, [
+                _c("h4", { staticClass: "card-title" }, [
+                  _vm._v("Inverse table")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "card-description" }, [
+                  _vm._v(" Add class "),
+                  _c("code", [_vm._v(".table-dark")])
+                ]),
+                _vm._v(" "),
+                _c("table", { staticClass: "table table-dark" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v(" # ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" First name ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Amount ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Deadline ")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [_vm._v(" 1 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Herman Beck ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 77.99 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 15, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 2 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Messsy Adam ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $245.30 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" July 1, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 3 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" John Richards ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $138.00 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Apr 12, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 4 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Peter Meggik ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 77.99 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 15, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 5 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Edward ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 160.25 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 03, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 6 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" John Doe ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 123.21 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" April 05, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v(" 7 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Henry Tom ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 150.00 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" June 16, 2015 ")])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-12 stretch-card" }, [
+            _c("div", { staticClass: "card" }, [
+              _c("div", { staticClass: "card-body" }, [
+                _c("h4", { staticClass: "card-title" }, [
+                  _vm._v("Table with contextual classes")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "card-description" }, [
+                  _vm._v(" Add class "),
+                  _c("code", [_vm._v(".table-{color}")])
+                ]),
+                _vm._v(" "),
+                _c("table", { staticClass: "table table-bordered" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v(" # ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" First name ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Product ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Amount ")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v(" Deadline ")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", { staticClass: "table-info" }, [
+                      _c("td", [_vm._v(" 1 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Herman Beck ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Photoshop ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 77.99 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 15, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", { staticClass: "table-warning" }, [
+                      _c("td", [_vm._v(" 2 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Messsy Adam ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Flash ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $245.30 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" July 1, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", { staticClass: "table-danger" }, [
+                      _c("td", [_vm._v(" 3 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" John Richards ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Premeire ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $138.00 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Apr 12, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", { staticClass: "table-success" }, [
+                      _c("td", [_vm._v(" 4 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Peter Meggik ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" After effects ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 77.99 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 15, 2015 ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", { staticClass: "table-primary" }, [
+                      _c("td", [_vm._v(" 5 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Edward ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" Illustrator ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" $ 160.25 ")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(" May 03, 2015 ")])
+                    ])
+                  ])
                 ])
               ])
             ])
@@ -76533,6 +77933,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/dynamicPost.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/pages/dynamicPost.vue ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _dynamicPost_vue_vue_type_template_id_12297ef9_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dynamicPost.vue?vue&type=template&id=12297ef9&scoped=true& */ "./resources/js/components/pages/dynamicPost.vue?vue&type=template&id=12297ef9&scoped=true&");
+/* harmony import */ var _dynamicPost_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dynamicPost.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/dynamicPost.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _dynamicPost_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _dynamicPost_vue_vue_type_template_id_12297ef9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _dynamicPost_vue_vue_type_template_id_12297ef9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "12297ef9",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/pages/dynamicPost.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/dynamicPost.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/pages/dynamicPost.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_dynamicPost_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./dynamicPost.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/dynamicPost.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_dynamicPost_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/dynamicPost.vue?vue&type=template&id=12297ef9&scoped=true&":
+/*!**************************************************************************************************!*\
+  !*** ./resources/js/components/pages/dynamicPost.vue?vue&type=template&id=12297ef9&scoped=true& ***!
+  \**************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_dynamicPost_vue_vue_type_template_id_12297ef9_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./dynamicPost.vue?vue&type=template&id=12297ef9&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/dynamicPost.vue?vue&type=template&id=12297ef9&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_dynamicPost_vue_vue_type_template_id_12297ef9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_dynamicPost_vue_vue_type_template_id_12297ef9_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/error-404.vue":
 /*!*****************************************************!*\
   !*** ./resources/js/components/pages/error-404.vue ***!
@@ -77106,6 +78575,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_register__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/pages/register */ "./resources/js/components/pages/register.vue");
 /* harmony import */ var _components_pages_table__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/pages/table */ "./resources/js/components/pages/table.vue");
 /* harmony import */ var _components_pages_typography__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/pages/typography */ "./resources/js/components/pages/typography.vue");
+/* harmony import */ var _components_pages_dynamicPost__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/pages/dynamicPost */ "./resources/js/components/pages/dynamicPost.vue");
+
 
 
 
@@ -77154,6 +78625,9 @@ __webpack_require__.r(__webpack_exports__);
 }, {
   path: '/typography',
   component: _components_pages_typography__WEBPACK_IMPORTED_MODULE_11__["default"]
+}, {
+  path: '/post',
+  component: _components_pages_dynamicPost__WEBPACK_IMPORTED_MODULE_12__["default"]
 }
 /*{path: '/blog/:id', component: singleBlog}*/
 ]);

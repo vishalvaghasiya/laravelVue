@@ -161,7 +161,7 @@
 
 <script>
     export default {
-        name: "navbar"
+        name: "navbarCustom"
     }
 </script>
 
