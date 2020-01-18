@@ -5,30 +5,28 @@
                 <div class="col-lg-8 mx-auto">
                     <div class="auth-form-light text-left p-5">
                         <div class="brand-logo">
-                            <!--<img src="images/logo.svg">-->
                             <h2 class="text-center text-primary">Post Upload</h2>
                         </div>
                         <h4>let's get started - Upload your Post</h4>
                         <h4 v-if="!submitted" class="text-danger text-center"> {{output}}</h4>
-                        <!--<form @submit="sendPost" action="https://vuejs.org/" method="post" class="pt-3">-->
-
                         <form v-if="submitted" action="">
                             <div class="form-group">
-                                <input type="text" v-model="title" class="form-control form-control-lg"
+                                <input type="text" v-model="blog.title" class="form-control form-control-lg"
                                        placeholder="Title">
                             </div>
                             <div class="form-group">
-                                <input type="text" v-model="subtitle" class="form-control form-control-lg"
+                                <input type="text" v-model="blog.subtitle" class="form-control form-control-lg"
                                        placeholder="Subtitle">
                             </div>
                             <div class="form-group mb-2">
                                 <span>Description</span><br>
                                 <textarea class="form-control" placeholder="Description(Tell your story…)"
-                                          v-model="description" required></textarea>
+                                          v-model="blog.description" required></textarea>
                             </div>
                             <div class="mt-3">
                                 <a class="btn btn-block font-weight-medium auth-form-btn">
-                                    <button @click.prevent="post()" class="btn btn-lg btn-gradient-success">Add Post</button>
+                                    <button @click.prevent="post()" class="btn btn-lg btn-gradient-success">Add Post
+                                    </button>
                                 </a>
                             </div>
                         </form>
@@ -49,10 +47,11 @@
         components: {},
         data() {
             return {
-                title: '',
-                subtitle: '',
-                description: '',
-                /*output: '',*/
+                blog: {
+                    title: '',
+                    subtitle: '',
+                    description: ''
+                },
                 output: 'your post submitted successfully',
                 submitted: true,
             }
@@ -72,9 +71,9 @@
             post: function () {
                 let currentObj = this;
                 axios.post('/post', {
-                    title: this.title,
-                    subtitle: this.subtitle,
-                    description: this.description,
+                    title: this.blog.title,
+                    subtitle: this.blog.subtitle,
+                    description: this.blog.description,
                 }).then(function (response) {
                     console.log(response.data);
                     currentObj.submitted = false;
@@ -85,9 +84,11 @@
             },
             showPage() {
                 this.submitted = true;
-                this.title = '';
+                this.blog = ''
+                // without blog object use instance
+                /*this.title = '';
                 this.subtitle = '';
-                this.description = '';
+                this.description = '';*/
             }
         }
     }

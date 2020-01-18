@@ -7433,18 +7433,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "post",
   components: {},
   data: function data() {
     return {
-      title: '',
-      subtitle: '',
-      description: '',
-
-      /*output: '',*/
+      blog: {
+        title: '',
+        subtitle: '',
+        description: ''
+      },
       output: 'your post submitted successfully',
       submitted: true
     };
@@ -7464,9 +7462,9 @@ __webpack_require__.r(__webpack_exports__);
     post: function post() {
       var currentObj = this;
       axios.post('/post', {
-        title: this.title,
-        subtitle: this.subtitle,
-        description: this.description
+        title: this.blog.title,
+        subtitle: this.blog.subtitle,
+        description: this.blog.description
       }).then(function (response) {
         console.log(response.data);
         currentObj.submitted = false;
@@ -7477,9 +7475,11 @@ __webpack_require__.r(__webpack_exports__);
     },
     showPage: function showPage() {
       this.submitted = true;
-      this.title = '';
+      this.blog = ''; // without blog object use instance
+
+      /*this.title = '';
       this.subtitle = '';
-      this.description = '';
+      this.description = '';*/
     }
   }
 });
@@ -58875,19 +58875,19 @@ var render = function() {
                             {
                               name: "model",
                               rawName: "v-model",
-                              value: _vm.title,
-                              expression: "title"
+                              value: _vm.blog.title,
+                              expression: "blog.title"
                             }
                           ],
                           staticClass: "form-control form-control-lg",
                           attrs: { type: "text", placeholder: "Title" },
-                          domProps: { value: _vm.title },
+                          domProps: { value: _vm.blog.title },
                           on: {
                             input: function($event) {
                               if ($event.target.composing) {
                                 return
                               }
-                              _vm.title = $event.target.value
+                              _vm.$set(_vm.blog, "title", $event.target.value)
                             }
                           }
                         })
@@ -58899,19 +58899,23 @@ var render = function() {
                             {
                               name: "model",
                               rawName: "v-model",
-                              value: _vm.subtitle,
-                              expression: "subtitle"
+                              value: _vm.blog.subtitle,
+                              expression: "blog.subtitle"
                             }
                           ],
                           staticClass: "form-control form-control-lg",
                           attrs: { type: "text", placeholder: "Subtitle" },
-                          domProps: { value: _vm.subtitle },
+                          domProps: { value: _vm.blog.subtitle },
                           on: {
                             input: function($event) {
                               if ($event.target.composing) {
                                 return
                               }
-                              _vm.subtitle = $event.target.value
+                              _vm.$set(
+                                _vm.blog,
+                                "subtitle",
+                                $event.target.value
+                              )
                             }
                           }
                         })
@@ -58926,8 +58930,8 @@ var render = function() {
                             {
                               name: "model",
                               rawName: "v-model",
-                              value: _vm.description,
-                              expression: "description"
+                              value: _vm.blog.description,
+                              expression: "blog.description"
                             }
                           ],
                           staticClass: "form-control",
@@ -58935,13 +58939,17 @@ var render = function() {
                             placeholder: "Description(Tell your story…)",
                             required: ""
                           },
-                          domProps: { value: _vm.description },
+                          domProps: { value: _vm.blog.description },
                           on: {
                             input: function($event) {
                               if ($event.target.composing) {
                                 return
                               }
-                              _vm.description = $event.target.value
+                              _vm.$set(
+                                _vm.blog,
+                                "description",
+                                $event.target.value
+                              )
                             }
                           }
                         })
@@ -58966,7 +58974,11 @@ var render = function() {
                                   }
                                 }
                               },
-                              [_vm._v("Add Post")]
+                              [
+                                _vm._v(
+                                  "Add Post\n                                "
+                                )
+                              ]
                             )
                           ]
                         )
