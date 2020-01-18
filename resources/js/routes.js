@@ -11,7 +11,7 @@ import register from "./components/pages/register";
 import table from "./components/pages/table";
 import typography from "./components/pages/typography";
 import dynamicPost from "./components/pages/dynamicPost";
-
+import post from "./components/pages/post";
 
 export default [
     {path: '/', component: dashboard},
@@ -26,7 +26,7 @@ export default [
     {path: '/register', component: register},
     {path: '/table', component: table},
     {path: '/typography', component: typography},
-    {path:'/post' ,component :dynamicPost}
-
+    {path:'/postview' ,component :dynamicPost},
+    {path:'/postupload' , component:post},
     /*{path: '/blog/:id', component: singleBlog}*/
 ]

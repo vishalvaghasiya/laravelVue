@@ -1,0 +1,7 @@
+{{--if ($_SERVER['HTTPS'] = 'http://laravelvue.test/postupload')--}}
+{{--@php
+    use Illuminate\Support\Facades\URL;
+    if (URL::current() == 'http://laravelvue.test/postupload'){
+        echo '<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>';
+    }
+@endphp--}}

@@ -65,9 +65,15 @@
                 </router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/post" class="nav-link">
-                    <span class="menu-title">Post</span>
-                    <i class="mdi mdi-table-large menu-icon"></i>
+                <router-link to="/postupload" class="nav-link">
+                    <span class="menu-title">Post Upload</span>
+                    <i class="mdi mdi-apple-keyboard-command menu-icon"></i>
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link to="/postview" class="nav-link">
+                    <span class="menu-title">PostView</span>
+                    <i class="mdi mdi-border-bottom menu-icon"></i>
                 </router-link>
             </li>
             <li class="nav-item">
