@@ -12,6 +12,7 @@ import table from "./components/pages/table";
 import typography from "./components/pages/typography";
 import dynamicPost from "./components/pages/dynamicPost";
 import post from "./components/pages/post";
+import images from './components/pages/ImageUploader';
 
 export default [
     {path: '/', component: dashboard},
@@ -28,5 +29,6 @@ export default [
     {path: '/typography', component: typography},
     {path:'/postview' ,component :dynamicPost},
     {path:'/postupload' , component:post},
+    {path:'/image' , component:images},
     /*{path: '/blog/:id', component: singleBlog}*/
 ]

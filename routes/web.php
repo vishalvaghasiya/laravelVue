@@ -17,6 +17,7 @@
 Route::group(['api' => 'postApi'], function () {
     Route::get('/postApi', 'ApiController@postApi');
     Route::post('/post', 'PagesController@postupload');
+    Route::post('/images-upload', 'PagesController@imageupload');
 });
 
 Route::get('/{view?}', 'PagesController@landing')->where('view', '(.*)')->name('landing');

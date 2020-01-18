@@ -27,6 +27,17 @@
                                 <input type="text" v-model="blog.category" class="form-control form-control-lg"
                                        placeholder="Category">
                             </div>
+
+                            <!--Start Image preview show-->
+                            <div class="form-group">
+                                <input type="file" @change="onFileChange"/>
+                            </div>
+                            <div id="preview">
+                                <img v-if="url" :src="url"/>
+                            </div>
+                            <!--End Try Image show-->
+
+
                             <div class="mt-3">
                                 <a class="btn btn-block font-weight-medium auth-form-btn">
                                     <button @click.prevent="post()" class="btn btn-lg btn-gradient-success">Add Post
@@ -58,28 +69,31 @@
                 },
                 output: '',
                 submitted: true,
+                url: null,
+                selectedFile: '',
             }
         },
         methods: {
-            /*post() {
-                this.$http.post('https://jsonplaceholder.typicode.com/posts', {
-                    title: this.title,
-                    body: this.description,
-                    /!*subtitle: this.subtitle,*!/
-                    userId: 1,
-                }).then(function (data) {
-                    console.log(data);
-                    this.submitted = true;
-                });
-            },*/
-            post: function () {
+            onFileChange(e) {
+                const file = e.target.files[0];
+                console.log(e);
+                console.log(file);
+                this.url = URL.createObjectURL(file);
+                this.selectedFile = e.target.files[0];
+            },
+            post() {
                 let currentObj = this;
-                // const config = { headers: { 'Content-Type': 'multipart/form-data' } };
+
+              /*  const fd = new FormData();
+                fd.append('image', this.selectedFile, this.selectedFile.name);*/
+
                 axios.post('/post', {
                     title: this.blog.title,
                     subtitle: this.blog.subtitle,
                     description: this.blog.description,
                     category: this.blog.category,
+                    image: this.selectedFile,
+                    // image: this.url,
                 }).then(function (response) {
                     console.log(response);
                     currentObj.output = response.data;
@@ -96,11 +110,29 @@
                 /*this.title = '';
                 this.subtitle = '';
                 this.description = '';*/
+                // const config = { headers: { 'Content-Type': 'multipart/form-data' } };
             }
         }
     }
 </script>
 
 <style scoped>
+    body {
+        background-color: #e2e2e2;
+    }
 
+    #app {
+        padding: 20px;
+    }
+
+    #preview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #preview img {
+        max-width: 100%;
+        max-height: 500px;
+    }
 </style>
