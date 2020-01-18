@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid page-body-wrapper full-page-wrapper">
-        <div class="content-wrapper d-flex align-items-center auth">
+        <div class="content-wrapper align-items-center auth">
             <div class="row flex-grow">
                 <div class="col-lg-8 mx-auto">
                     <div class="auth-form-light text-left p-5">
@@ -9,7 +9,7 @@
                         </div>
                         <h4>let's get started - Upload your Post</h4>
                         <h4 v-if="!submitted" class="text-danger text-center"> {{output}}</h4>
-                        <form v-if="submitted" action="">
+                        <form v-if="submitted" action="" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <input type="text" v-model="blog.title" class="form-control form-control-lg"
                                        placeholder="Title">
@@ -22,6 +22,10 @@
                                 <span>Description</span><br>
                                 <textarea class="form-control" placeholder="Description(Tell your story…)"
                                           v-model="blog.description" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" v-model="blog.category" class="form-control form-control-lg"
+                                       placeholder="Category">
                             </div>
                             <div class="mt-3">
                                 <a class="btn btn-block font-weight-medium auth-form-btn">
@@ -44,15 +48,15 @@
 <script>
     export default {
         name: "post",
-        components: {},
         data() {
             return {
                 blog: {
                     title: '',
                     subtitle: '',
-                    description: ''
+                    description: '',
+                    category: ''
                 },
-                output: 'your post submitted successfully',
+                output: '',
                 submitted: true,
             }
         },
@@ -70,12 +74,15 @@
             },*/
             post: function () {
                 let currentObj = this;
+                // const config = { headers: { 'Content-Type': 'multipart/form-data' } };
                 axios.post('/post', {
                     title: this.blog.title,
                     subtitle: this.blog.subtitle,
                     description: this.blog.description,
+                    category: this.blog.category,
                 }).then(function (response) {
-                    console.log(response.data);
+                    console.log(response);
+                    currentObj.output = response.data;
                     currentObj.submitted = false;
                 }).catch(function (error) {
                     console.log(error);

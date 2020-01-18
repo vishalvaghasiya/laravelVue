@@ -7433,17 +7433,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "post",
-  components: {},
   data: function data() {
     return {
       blog: {
         title: '',
         subtitle: '',
-        description: ''
+        description: '',
+        category: ''
       },
-      output: 'your post submitted successfully',
+      output: '',
       submitted: true
     };
   },
@@ -7460,13 +7464,16 @@ __webpack_require__.r(__webpack_exports__);
         });
     },*/
     post: function post() {
-      var currentObj = this;
+      var currentObj = this; // const config = { headers: { 'Content-Type': 'multipart/form-data' } };
+
       axios.post('/post', {
         title: this.blog.title,
         subtitle: this.blog.subtitle,
-        description: this.blog.description
+        description: this.blog.description,
+        category: this.blog.category
       }).then(function (response) {
-        console.log(response.data);
+        console.log(response);
+        currentObj.output = response.data;
         currentObj.submitted = false;
       })["catch"](function (error) {
         console.log(error);
@@ -58850,25 +58857,31 @@ var render = function() {
     "div",
     { staticClass: "container-fluid page-body-wrapper full-page-wrapper" },
     [
-      _c(
-        "div",
-        { staticClass: "content-wrapper d-flex align-items-center auth" },
-        [
-          _c("div", { staticClass: "row flex-grow" }, [
-            _c("div", { staticClass: "col-lg-8 mx-auto" }, [
-              _c("div", { staticClass: "auth-form-light text-left p-5" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                _c("h4", [_vm._v("let's get started - Upload your Post")]),
-                _vm._v(" "),
-                !_vm.submitted
-                  ? _c("h4", { staticClass: "text-danger text-center" }, [
-                      _vm._v(" " + _vm._s(_vm.output))
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.submitted
-                  ? _c("form", { attrs: { action: "" } }, [
+      _c("div", { staticClass: "content-wrapper align-items-center auth" }, [
+        _c("div", { staticClass: "row flex-grow" }, [
+          _c("div", { staticClass: "col-lg-8 mx-auto" }, [
+            _c("div", { staticClass: "auth-form-light text-left p-5" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("h4", [_vm._v("let's get started - Upload your Post")]),
+              _vm._v(" "),
+              !_vm.submitted
+                ? _c("h4", { staticClass: "text-danger text-center" }, [
+                    _vm._v(" " + _vm._s(_vm.output))
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.submitted
+                ? _c(
+                    "form",
+                    {
+                      attrs: {
+                        action: "",
+                        method: "post",
+                        enctype: "multipart/form-data"
+                      }
+                    },
+                    [
                       _c("div", { staticClass: "form-group" }, [
                         _c("input", {
                           directives: [
@@ -58955,6 +58968,34 @@ var render = function() {
                         })
                       ]),
                       _vm._v(" "),
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.blog.category,
+                              expression: "blog.category"
+                            }
+                          ],
+                          staticClass: "form-control form-control-lg",
+                          attrs: { type: "text", placeholder: "Category" },
+                          domProps: { value: _vm.blog.category },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.blog,
+                                "category",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
                       _c("div", { staticClass: "mt-3" }, [
                         _c(
                           "a",
@@ -58983,30 +59024,30 @@ var render = function() {
                           ]
                         )
                       ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                !_vm.submitted
-                  ? _c("div", { staticClass: "text-center" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-primary",
-                          on: {
-                            click: function($event) {
-                              return _vm.showPage()
-                            }
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.submitted
+                ? _c("div", { staticClass: "text-center" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary",
+                        on: {
+                          click: function($event) {
+                            return _vm.showPage()
                           }
-                        },
-                        [_vm._v("Add new Post")]
-                      )
-                    ])
-                  : _vm._e()
-              ])
+                        }
+                      },
+                      [_vm._v("Add new Post")]
+                    )
+                  ])
+                : _vm._e()
             ])
           ])
-        ]
-      )
+        ])
+      ])
     ]
   )
 }
@@ -76554,10 +76595,11 @@ try {
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 } catch (e) {}
 /**
- * We'll load the axios HTTP library which allows us to easily issue requests
+ * We'll load the axios HTTP    library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
+// let token = document.head.querySelector('meta[name="csrf-token"]');
 
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
